@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.header {
+    grid-column: span 2;
+    text-align: center;
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    color: #00f7ff;
+}
+
+.panel {
+    background: rgba(255,255,255,0.06);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.field input,
+.field select {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #00f7ff;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00c6cc;
+}
+
+.output-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.card {
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.card span {
+    color: #aaa;
+}
+
+.card h3 {
+    color: #00f7ff;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        grid-column: span 1;
+    }
+
+    .output-panel {
+        grid-template-columns: 1fr;
+    }
+}
